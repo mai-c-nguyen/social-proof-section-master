@@ -1,0 +1,187 @@
+
+:root {
+    --very-dark-magenta:hsl(300, 43%, 22%);
+    --soft-pink:hsl(333, 80%, 67%);
+
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta:hsl(300, 24%, 96%) ;
+    --white: hsl(0, 0%, 100%);
+
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background: url('./images/bg-pattern-top-mobile.svg'), url('./images/bg-pattern-bottom-mobile.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin: 5rem 20rem;
+  padding: 7rem;
+}
+.info {
+  display: flex;
+  color: var(--very-dark-magenta);
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+.product h1 {
+  color: var(--very-dark-magenta);
+  font-size: 40px;
+  width: 250px;
+  line-height: 1;
+}
+
+.product p {
+  padding-top: 1rem;
+  color: var(--very-dark-magenta);
+  font-size: 13px;
+  width: 350px;
+  line-height: 1.4;
+  opacity: 0.5;
+}
+.rate1, .rate2, .rate3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  padding: 1rem;
+  padding-right: 3rem;
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+  border-radius: .5rem;
+  background-color:  var(--light-grayish-magenta);
+  float: right;
+  margin-bottom: 15px;
+}
+
+.rate1 {
+  margin-right: 5rem;
+}
+.rate2 {
+  margin-right: 2.5rem;
+}
+.rate p {
+  padding-left: 2rem;
+}
+
+img {
+  height: 10px;
+}
+.review {
+  display: flex;
+
+}
+.review1, .review2, .review3 {
+  background-color: var(--very-dark-magenta);
+  border-radius: .5rem;
+  margin-top: 1rem;
+  padding: 1.2rem;
+
+}
+.review2, .review3 {
+  margin-left: 1.2rem;
+  position: relative;
+  bottom: -1rem;
+}
+
+.review3 {
+  bottom: -2rem;
+}
+
+.pic {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+q {
+    font-size: 9px;
+    color: var(--light-grayish-magenta) !important;
+    opacity: 0.6;
+    line-height: 1.4;
+}
+
+.name h1{
+    color: white;
+    font-size: 9px;
+}
+.name h2{
+    font-size: 9px;
+    color: var(--soft-pink);
+    padding-top: 0.3rem;
+}
+
+.pic img{
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin:  1rem 1rem 1rem 0;
+}
+
+@media only media and (min-width: 1000px) {
+
+  body {
+    background: url('./images/bg-pattern-top-desktop.svg'), url('./images/bg-pattern-bottom-desktop.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    }
+
+  main {
+
+        width: 1000px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0 auto;
+  }
+
+  .info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product h1 {
+    font-size: 3rem;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .product p {
+    font-size: 1.02rem;
+    margin: 0 0 15px 0;
+    text-align: center;
+  }
+  .rate {
+    width: 50px;
+    text-align: center;
+  }
+
+  .rate1, .rate2, .rate2 {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+  }
+}
+
+
